@@ -66,7 +66,7 @@
     function getWrapper(username) {
         const wrapper = d.createElement('a');
         wrapper.href = `#page-top`;
-        wrapper.className = 'github-profile-badge-wrapper';
+        wrapper.className = 'github-profile-badge-wrapper page-scroll';
         wrapper.title = 'Return to top'
         return wrapper;
     }
