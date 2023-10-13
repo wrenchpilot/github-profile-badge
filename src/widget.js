@@ -65,8 +65,7 @@
      */
     function getWrapper(username) {
         const wrapper = d.createElement('a');
-        wrapper.href = `https://github.com/${username}`;
-        wrapper.target = '_blank';
+        wrapper.href = `#page-top`;
         wrapper.className = 'github-profile-badge-wrapper';
         return wrapper;
     }
@@ -105,9 +104,11 @@
      * @param {string} username
      */
     function getNameText(username) {
-        const nameText = d.createElement('p');
+        const nameText = d.createElement('a');
+        nameText.href = `https://github.com/${username}`;
+        nameText.target = '_blank';
         nameText.className = 'github-profile-badge-name';
-        nameText.innerText = '\\' + username;
+        nameText.innerText = '\\' + `${username}`;
         return nameText;
     }
 
