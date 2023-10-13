@@ -67,6 +67,7 @@
         const wrapper = d.createElement('a');
         wrapper.href = `#page-top`;
         wrapper.className = 'github-profile-badge-wrapper';
+        wrapper.title = 'Return to top'
         return wrapper;
     }
 
@@ -108,6 +109,7 @@
         nameText.href = `https://github.com/${username}`;
         nameText.target = '_blank';
         nameText.className = 'github-profile-badge-name';
+        nameText.title = 'Github Profile'
         nameText.innerText = '\\' + `${username}`;
         return nameText;
     }
